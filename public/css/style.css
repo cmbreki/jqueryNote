@@ -1,0 +1,99 @@
+.delete-btn{
+	width:100px;
+	margin-left:20px;
+}
+
+
+.box{
+
+	background-color:red;
+	height:300px;
+	width:300px;
+	margin:10px;
+	display:inline-block;
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+
+.box:hover{
+	background-color: blue;
+	height:400px;
+	width:400px;
+}
+
+.note{
+	margin:20px;
+	padding:10px;
+	background-color:yellow;
+	height:300px;
+	width:300px;
+	float:left;
+}	
+
+.photo{
+	/*text-align:center;*/
+	height:150px;
+	width:inherit;
+}
+
+.note p{
+
+	text-align: center;
+}
+
+.delete-btn{
+	float:right;
+	height:20px;
+	width:20px;
+	padding-bottom:5px;
+}
+
+.delete-btn:hover{
+
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 0.4s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 0.4s;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+}
+
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
